@@ -34,6 +34,8 @@ Route::get('customer/order-confirm', 'HomeController@orderConfirm')->name('Order
 
 Route::get('customer/customer-payment', 'HomeController@customerPayment')->name('CustomerPayment');
 
+Route::post('customer/customer-payment', 'HomeController@customerPaymentPost')->name('customerPaymentPost');
+
 Route::patch('customer/select-package', 'HomeController@updatePackage')->name('UpdatePackage');
 
 Route::patch('customer/select-template', 'HomeController@updateTemplate')->name('UpdateTemplate');

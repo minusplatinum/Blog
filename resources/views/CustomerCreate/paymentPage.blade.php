@@ -1,7 +1,12 @@
 @extends('layouts.app')
 @section('content')
-<div class="container">
-    <h1 class="display-1">This Will Be The Payment Page!</h1>
-    <a href="{{ url('home') }}" class="btn btn-lg btn-block btn-success">Next Step</a>    
-</div>         
+<form action="{{ route('customerPaymentPost') }}" method="post">
+  @csrf
+    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="{{ config('services.stripe.key') }}"
+            data-description="Website Package"
+            data-amount="50000"
+            data-locale="auto">
+    </script>
+  </form>
 @endsection

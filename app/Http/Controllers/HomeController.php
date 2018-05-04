@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Storage;
 use App\User;
 use App\Package;
 use App\Template;
+use Stripe\Stripe;
 
 use Illuminate\Support\Facades\Auth;
 
@@ -92,7 +93,7 @@ class HomeController extends Controller
      */
     public function orderConfirm()
     {
-        $user = Auth::user();;
+        $user = Auth::user();
 
         $package = Package::find($user->package_id);
         $template = Template::find($user->template_id);
@@ -133,11 +134,47 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function customerPayment()
+    public function customerPayment(Request $request)
     {
         $user = Auth::user();
+        $token = config('services.stripe');
+        Stripe::setApiKey($token['secret']);
+        
         return view('CustomerCreate.paymentPage')->with('user', $user);
+        
     }
+
+    /**
+     * Show The Dashboard Page..
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function customerPaymentPost(Request $request)
+    {
+        $user = Auth::user();
+        $StripeKeys = config('services.stripe');
+        Stripe::setApiKey($StripeKeys['secret']);
+        $token = request('_token');
+        $stripeToken = request('stripeToken');
+        $stripeTokenType = request('stripeTokenType');
+        $stripeEmail = request('stripeEmail');
+        //dd($request);
+        $customer = \Stripe\Customer::create(array(
+            'email' => $stripeEmail,
+            'source'  => $stripeToken
+        ));
+
+        $charge = \Stripe\Charge::create(array(
+            'customer' => $customer->id,
+            'amount'   => 5000,
+            'currency' => 'usd'
+        ));
+        
+        return redirect()->route('home')->with('success', 'Your Purchase Was Completed Successfully!')->with('user', $user);
+          
+    }
+
+
 
     /**
      * Show The Dashboard Page..
