@@ -4,7 +4,7 @@
     @foreach($packages as $package)
 <div id="{{ str_replace_array(' ', ['',''], $package->name) }}" name="{{ str_replace_array(' ', ['',''], $package->name) }}" class="row px-3 py-3">
         <div class="col-lg-6">
-            <img class="img-fluid rounded" style="width:700px; height:450px;" src="{{ url($package->imgUrl . $package->imgName) }}" alt="">
+            <img class="img-fluid rounded" src="{{ url($package->imgUrl . $package->imgName) }}" alt="">
         </div>
         <div class="col-lg-6">
             <h2>{{ $package->name }}</h2>

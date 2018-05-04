@@ -54,9 +54,6 @@ body{
   color:#ddd;
 }
 @media(max-width:568px){
-  body {
-    background-color: lightblue;
-  }
   .pimg1, .pimg2, .pimg3, .pimg4, .pimg5, .pimg6, .pimg7{
     background-attachment:scroll;
   }
