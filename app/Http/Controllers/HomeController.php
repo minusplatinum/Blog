@@ -137,10 +137,12 @@ class HomeController extends Controller
     public function customerPayment(Request $request)
     {
         $user = Auth::user();
+        $package = Package::findOrFail($user->package_id);
+        $template = Template::findOrFail($user->template_id);
         $token = config('services.stripe');
         Stripe::setApiKey($token['secret']);
         
-        return view('CustomerCreate.paymentPage')->with('user', $user);
+        return view('CustomerCreate.paymentPage')->with('user', $user)->with('package', $package)->with('template', $template);
         
     }
 
