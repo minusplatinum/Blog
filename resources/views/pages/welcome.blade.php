@@ -116,16 +116,16 @@
     </div><!-- /.container -->
 
     <div class="container text-center">
-        <div class="text-white bg-primary text-center my-3">
+        <div data-aos="fade-up-left" class="text-white bg-primary text-center my-3">
             <div class="card-body">
                 <h3 class="text-white">Services We Offer</h3>
             </div>
         </div>
         
-        <div class="row mx-0 pt-4" style="background-color:#f4f4f4;">
-            <div class="col-sm-4">
-                <span><i class="material-icons text-primary" style="font-size: 50px">web</i></span>
-                <h4>Custom Website Design</h4>
+        <div data-aos="slide-up" class="row mx-0 pt-4">
+            <div class="col-sm-4 serviceItems">
+                <span><i class="material-icons text-primary" style="font-size: 70px">web</i></span>
+                <h4 class="">Custom Website Design</h4>
                 <ul class="list-unstyled">
                     <li>Custom Website Components</li>
                     <li>Taylored For Your Business</li>
@@ -133,8 +133,8 @@
                     <li>Unique Website designs</li>
                 </ul>
             </div>
-            <div class="col-sm-4">
-                <span><i class="material-icons text-primary" style="font-size: 50px">devices</i></span>
+            <div class="col-sm-4 serviceItems">
+                <span><i class="material-icons text-primary" style="font-size: 70px">devices</i></span>
                 <h4>Responsive Website Design</h4>
                 <ul class="list-unstyled">
                     <li>Flexible Content Placement</li>
@@ -144,9 +144,9 @@
                     
                 </ul>
             </div>
-            <div class="col-sm-4">
-                <span><i class="material-icons text-primary" style="font-size: 50px">add_shopping_cart</i></span>
-                <h4>Ecommerce Websites</h4>
+            <div class="col-sm-4 serviceItems">
+                <span><i class="material-icons text-primary" style="font-size: 70px">add_shopping_cart</i></span>
+                <h4>Ecommerce Website Design</h4>
                 <ul class="list-unstyled">
                     <li>Inventory Management</li>
                     <li>Reach to a bigger market</li>
@@ -155,9 +155,9 @@
                 </ul>
             </div>
         </div>
-        <div class="row mx-0" style="background-color:#f4f4f4;">
-            <div class="col-sm-4">
-                <span><i class="material-icons text-primary" style="font-size: 50px">contact_mail</i></span>
+        <div class="row mx-0">
+            <div class="col-sm-4 serviceItems">
+                <span><i class="material-icons text-primary" style="font-size: 70px">contact_mail</i></span>
                 <h4>Content Management Systems</h4>
                 <ul class="list-unstyled">
                     <li>Wide Variety OF Templates</li>
@@ -166,9 +166,9 @@
                     <li>Have Multiple User Accounts</li>
                 </ul>
             </div>
-            <div class="col-sm-4">
-                <span><i class="material-icons text-primary" style="font-size: 50px">aspect_ratio</i></span>
-                <h4>Website Redesign</h4>
+            <div class="col-sm-4 serviceItems">
+                <span><i class="material-icons text-primary" style="font-size: 70px">aspect_ratio</i></span>
+                <h4>Website Redesign Services</h4>
                 <ul class="list-unstyled">
                     <li>Freshen Up Your Website</li>
                     <li>Add Modern features</li>
@@ -176,9 +176,9 @@
                     <li>Improve Website Performance</li>
                 </ul>
             </div>
-            <div class="col-sm-4">
-                <span><i class="material-icons text-primary" style="font-size: 50px">supervisor_account</i></span>
-                <h4>Personal Support</h4>
+            <div class="col-sm-4 serviceItems">
+                <span><i class="material-icons text-primary" style="font-size: 70px">supervisor_account</i></span>
+                <h4>Customer Support Services</h4>
                 <ul class="list-unstyled">
                     <li>Customer Website Troubleshooting</li>
                     <li>Customer Webmail Configuration</li>

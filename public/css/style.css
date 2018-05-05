@@ -1,6 +1,16 @@
 body{
   background-color:#f4f4f4;
 }
+.serviceItems{
+  
+  color: dodgerblue;
+  text-shadow:
+    -.5px -.5px 0 #000,
+    .5px -.5px 0 #000,
+    -.5px .5px 0 #000,
+    .5px .5px 0 #000; 
+}
+
 .welcomeImage, .pimg1, .pimg2, .pimg3, .pimg4, .pimg5, .pimg6, .pimg7{
   position:relative;
   opacity:0.70;
