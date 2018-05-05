@@ -13,6 +13,7 @@ body{
 }
 .serviceItems h4{
   font-size:180%;
+  font-weight:900;
 }
 .welcomeImage, .pimg1, .pimg2, .pimg3, .pimg4, .pimg5, .pimg6, .pimg7{
   position:relative;
