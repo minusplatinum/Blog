@@ -48,7 +48,7 @@
     <div class="container text-center py-3">
             <!-- Content Row -->
         <div class="row">
-            <div class="col-md-4 mb-4">
+            <div data-aos="fade-right" class="col-md-4 mb-4">
                 <div class="card h-100">
                     <div class="card-header">
                             <h2 class="card-title ">Basic Website Package</h2>
@@ -69,7 +69,7 @@
                 </div>
             </div>
             <!-- /.col-md-4 -->
-            <div class="col-md-4 mb-4">
+            <div data-aos="fade-up" class="col-md-4 mb-4">
                 <div class="card h-100">
                         <div class="card-header">
                                 <h2 class="card-title">Premium Website Package</h2>
@@ -91,7 +91,7 @@
                 </div>
             </div>
             <!-- /.col-md-4 -->
-            <div class="col-md-4 mb-4">
+            <div data-aos="fade-left" class="col-md-4 mb-4">
                 <div class="card h-100">
                         <div class="card-header">
                                 <h2 class="card-title">Website Application Package</h2>

@@ -16,6 +16,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('vendor/aos/dist/aos.css') }}">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
@@ -158,7 +159,9 @@
 <script src="{{ asset('js/app.js') }}"></script>
 <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
 <script src="{{ asset('js/scrolling-nav.js') }}"></script>
+<script src="{{ asset('vendor/aos/dist/aos.js') }}"></script>
 <script>
+    AOS.init();
     $(function() {
         $('#package_id').change(function(){
             $('.packages').hide();
