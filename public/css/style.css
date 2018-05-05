@@ -1,16 +1,19 @@
 body{
   background-color:#f4f4f4;
 }
-.serviceItems{
-  
-  color: dodgerblue;
-  text-shadow:
-    -.5px -.5px 0 #000,
-    .5px -.5px 0 #000,
-    -.5px .5px 0 #000,
-    .5px .5px 0 #000; 
+.serviceContainer{
+  background-color: lightgrey;
+  opacity: .8;
+  padding-top:10px;
 }
-
+.serviceItems{
+  font-size:120%;
+  color: #007bff;
+  font-weight:900; 
+}
+.serviceItems h4{
+  font-size:180%;
+}
 .welcomeImage, .pimg1, .pimg2, .pimg3, .pimg4, .pimg5, .pimg6, .pimg7{
   position:relative;
   opacity:0.70;

@@ -115,15 +115,15 @@
         </div><!-- /.row -->
     </div><!-- /.container -->
 
-    <div class="container text-center">
+    <div class="container text-center serviceContainer">
         <div data-aos="fade-up-left" class="text-white bg-primary text-center my-3">
             <div class="card-body">
                 <h3 class="text-white">Services We Offer</h3>
             </div>
         </div>
         
-        <div data-aos="slide-up" class="row mx-0 pt-4">
-            <div class="col-sm-4 serviceItems">
+        <div class="row mx-0 pt-4">
+            <div data-aos="fade-down-right" class="col-sm-4 serviceItems">
                 <span><i class="material-icons text-primary" style="font-size: 70px">web</i></span>
                 <h4 class="">Custom Website Design</h4>
                 <ul class="list-unstyled">
@@ -133,7 +133,7 @@
                     <li>Unique Website designs</li>
                 </ul>
             </div>
-            <div class="col-sm-4 serviceItems">
+            <div data-aos="fade-down" class="col-sm-4 serviceItems">
                 <span><i class="material-icons text-primary" style="font-size: 70px">devices</i></span>
                 <h4>Responsive Website Design</h4>
                 <ul class="list-unstyled">
@@ -144,7 +144,7 @@
                     
                 </ul>
             </div>
-            <div class="col-sm-4 serviceItems">
+            <div data-aos="fade-left" class="col-sm-4 serviceItems">
                 <span><i class="material-icons text-primary" style="font-size: 70px">add_shopping_cart</i></span>
                 <h4>Ecommerce Website Design</h4>
                 <ul class="list-unstyled">
@@ -155,7 +155,7 @@
                 </ul>
             </div>
         </div>
-        <div class="row mx-0">
+        <div data-aos="fade-up-right" class="row mx-0">
             <div class="col-sm-4 serviceItems">
                 <span><i class="material-icons text-primary" style="font-size: 70px">contact_mail</i></span>
                 <h4>Content Management Systems</h4>
@@ -166,7 +166,7 @@
                     <li>Have Multiple User Accounts</li>
                 </ul>
             </div>
-            <div class="col-sm-4 serviceItems">
+            <div data-aos="fade-up" class="col-sm-4 serviceItems">
                 <span><i class="material-icons text-primary" style="font-size: 70px">aspect_ratio</i></span>
                 <h4>Website Redesign Services</h4>
                 <ul class="list-unstyled">
@@ -176,7 +176,7 @@
                     <li>Improve Website Performance</li>
                 </ul>
             </div>
-            <div class="col-sm-4 serviceItems">
+            <div data-aos="fade-up-left" class="col-sm-4 serviceItems">
                 <span><i class="material-icons text-primary" style="font-size: 70px">supervisor_account</i></span>
                 <h4>Customer Support Services</h4>
                 <ul class="list-unstyled">
