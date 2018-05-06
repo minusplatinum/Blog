@@ -18,9 +18,7 @@ Route::get('packages/{package}', 'PackageController@showPackage')->name('showPac
 /**
  * Template Routes
  */
-Route::get('templates/{template}', 'TemplateController@show')->name('show');
-
-Route::get('templates/{template}/template', 'TemplateController@showDemo')->name('showDemo');
+Route::get('templates/creative', 'TemplateController@showTemplateOne')->name('creative');
 /**
  * Auth Routes
  */
