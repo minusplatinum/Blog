@@ -42,4 +42,16 @@ class TemplateController extends Controller
     public function showTemplateThree(){
         return view('templates.onePageWonder.index');
     }
+        
+    public function showTemplateFour(){
+        return view('templates.onePageWonder.index');
+    }
+        
+    public function showTemplateFive(){
+        return view('templates.onePageWonder.index');
+    }
+        
+    public function showTemplateSix(){
+        return view('templates.onePageWonder.index');
+    }
 }

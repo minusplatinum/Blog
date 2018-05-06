@@ -25,6 +25,12 @@ Route::get('templates/creative', 'TemplateController@showTemplateOne')->name('cr
 Route::get('templates/agency', 'TemplateController@showTemplateTwo')->name('agency');
 
 Route::get('templates/onePageWonder', 'TemplateController@showTemplateThree')->name('onePageWonder');
+
+Route::get('templates/onePageWonder', 'TemplateController@showTemplateFour')->name('onePageWonder');
+
+Route::get('templates/onePageWonder', 'TemplateController@showTemplateFive')->name('onePageWonder');
+
+Route::get('templates/onePageWonder', 'TemplateController@showTemplateSix')->name('onePageWonder');
 /**
  * Auth Routes
  */

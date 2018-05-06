@@ -37,7 +37,7 @@
         <div class="card p-3">
             <div class="row">
                 @foreach($templates as $template)
-                <div class="col-lg-4">
+                <div class="col-lg-4 my-2">
                     <div class="card h-100">
                         <div class="card-header">
                             <img img class="img-fluid img-thumbnail" src="{{ $template->imgUrl . $template->img1Name }}" alt="{{ $template->name }}">
