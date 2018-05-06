@@ -138,12 +138,9 @@ class HomeController extends Controller
     {
         $user = Auth::user();
         $package = Package::findOrFail($user->package_id);
-        $template = Template::findOrFail($user->template_id);
-        $token = config('services.stripe');
-        Stripe::setApiKey($token['secret']);
+        $template = Template::findOrFail($user->template_id);      
         
         return view('CustomerCreate.paymentPage')->with('user', $user)->with('package', $package)->with('template', $template);
-        
     }
 
     /**
@@ -154,11 +151,7 @@ class HomeController extends Controller
     public function customerPaymentPost(Request $request)
     {
         $user = Auth::user();
-        $StripeKeys = config('services.stripe');
-        Stripe::setApiKey($StripeKeys['secret']);
-        $token = request('_token');
         $stripeToken = request('stripeToken');
-        $stripeTokenType = request('stripeTokenType');
         $stripeEmail = request('stripeEmail');
         //dd($request);
         $customer = \Stripe\Customer::create(array(
