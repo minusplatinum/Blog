@@ -24,10 +24,11 @@ class TemplateController extends Controller
      * @param  \App\Template  $template
      * @return \Illuminate\Http\Response
      */
-    public function show(Template $template)
+    public function showTemplates(Template $template)
     {
+        $templates = $template;
         
-        return view('templates.show');
+        return view('templates.show')->with('template', $templates);
     }
 
     public function showTemplateOne(){

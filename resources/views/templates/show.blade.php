@@ -7,7 +7,7 @@
     <!-- Portfolio Item Row -->
     <div class="row m-auto">
         <div class="col-md-8">
-            <img class="img-fluid" src="{{ $template->imgUrl }}{{ $template->img1Name }}" alt="">
+            <img class="img-fluid" src="{{ asset($template->imgUrl . $template->img1Name) }}" alt="">
         </div>
 
         <div class="col-md-4">
@@ -21,8 +21,8 @@
                 <li>{{ $template->feature4 }}</li>
             </ul>
             <div class="text-center text-md-left">
-            <a href="{{ url('/register') }}" class="btn btn-lg btn-success">Get Started!</a>
-            <a href="{{ route('showDemo', $template->id) }}" class="btn btn-lg btn-info" target="_blank">View Demo</a>
+            
+            
             </div>
         </div>
     </div>

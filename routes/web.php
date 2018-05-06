@@ -18,6 +18,8 @@ Route::get('packages/{package}', 'PackageController@showPackage')->name('showPac
 /**
  * Template Routes
  */
+Route::get('templates/{template}', 'TemplateController@showTemplates')->name('showTemplates');
+
 Route::get('templates/creative', 'TemplateController@showTemplateOne')->name('creative');
 
 Route::get('templates/agency', 'TemplateController@showTemplateTwo')->name('agency');
