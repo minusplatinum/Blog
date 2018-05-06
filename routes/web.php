@@ -19,6 +19,10 @@ Route::get('packages/{package}', 'PackageController@showPackage')->name('showPac
  * Template Routes
  */
 Route::get('templates/creative', 'TemplateController@showTemplateOne')->name('creative');
+
+Route::get('templates/agency', 'TemplateController@showTemplateTwo')->name('agency');
+
+Route::get('templates/onePageWonder', 'TemplateController@showTemplateThree')->name('onePageWonder');
 /**
  * Auth Routes
  */

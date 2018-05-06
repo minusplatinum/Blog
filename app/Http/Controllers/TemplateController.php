@@ -14,7 +14,8 @@ class TemplateController extends Controller
      */
     public function index()
     {
-        return view('templates.index');
+        $templates = Template::all();
+        return view('templates.index')->with('templates', $templates);
     }
 
     /**
@@ -31,5 +32,13 @@ class TemplateController extends Controller
 
     public function showTemplateOne(){
         return view('templates.creative.index');
+    }
+    
+    public function showTemplateTwo(){
+        return view('templates.agency.index');
+    }
+    
+    public function showTemplateThree(){
+        return view('templates.onePageWonder.index');
     }
 }
